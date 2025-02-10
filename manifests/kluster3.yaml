@@ -1,0 +1,14 @@
+
+apiVersion: bhavya.dev/v1alpha
+kind: Kluster
+metadata:
+  name: kluster-5
+spec:
+  name: kluster-5
+  region: "blr1"
+  version: "1.31.1-do.5"
+  tokensecret: "default/dosecret"
+  nodepools:
+    - count: 2
+      name: "dummy-nodepool"
+      size: "s-2vcpu-2gb"
